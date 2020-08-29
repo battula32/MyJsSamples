@@ -28,8 +28,10 @@ function getTotal(){
     var english = parseFloat(document.getElementById("englishMarks").value)
     var hindi = parseFloat(document.getElementById("hindiMarks").value)
     var total = maths+science+social+english + hindi;
+    var totalPercentage = (total/150)*100;
     document.getElementById("totalMarks").innerHTML = total;
-    
+    document.getElementById("totalPercentage").innerHTML = totalPercentage;
+
     console.log(total);
     
 }
